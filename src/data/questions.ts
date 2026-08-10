@@ -13,10 +13,6 @@ export type CategoryId =
 export interface Category {
   id: CategoryId;
   label: string;
-  /** Shown under the category pills to explain why this theme matters. */
-  purpose: string;
-  /** Follow-up nudge shown beneath the question itself. */
-  hint: string;
 }
 
 export interface Question {
@@ -26,66 +22,16 @@ export interface Question {
 }
 
 export const CATEGORIES: Category[] = [
-  {
-    id: 'icebreaker',
-    label: 'Icebreaker & Rapport',
-    purpose: 'Build personal connection and ease into the conversation.',
-    hint: 'Follow up with “Tell me more about that.” Let the answer breathe before moving on.',
-  },
-  {
-    id: 'wellbeing',
-    label: 'Check-in & Wellbeing',
-    purpose: 'Understand how the person is really doing, including workload and stress.',
-    hint: 'Listen for what is unsaid. A good follow-up: “What would actually help right now?”',
-  },
-  {
-    id: 'status',
-    label: 'Current Work & Status',
-    purpose: 'Explore priorities and where time is actually going, beyond a ticket list.',
-    hint: 'Aim for the “why” behind the work, not a progress report you could read in a tracker.',
-  },
-  {
-    id: 'wins_challenges',
-    label: 'Wins & Challenges',
-    purpose: 'Surface recent wins to celebrate and friction points that need attention.',
-    hint: 'Name the win out loud. For friction, ask “What would it take to fix that for good?”',
-  },
-  {
-    id: 'goals',
-    label: 'Goals & Career Development',
-    purpose: 'Keep long-term growth on the agenda, not just short-term tasks.',
-    hint: 'Close the loop: agree on one small, concrete step before the next 1:1.',
-  },
-  {
-    id: 'feedback',
-    label: 'Feedback & Performance',
-    purpose: 'Enable feedback in both directions and clarify expectations.',
-    hint: 'Be specific about behaviour and impact. Ask “How did that land for you?”',
-  },
-  {
-    id: 'team',
-    label: 'Team & Collaboration',
-    purpose: 'Explore team dynamics, communication quality, and collaboration friction.',
-    hint: 'Stay curious rather than defensive — you are gathering signal, not settling a case.',
-  },
-  {
-    id: 'manager_company',
-    label: 'Manager & Company Feedback',
-    purpose: 'Invite upward feedback and reflections on company direction.',
-    hint: 'Say thank you before you respond. Answering defensively ends upward feedback for good.',
-  },
-  {
-    id: 'remote',
-    label: 'Remote & Hybrid Work',
-    purpose: 'Address the specific challenges of distributed and hybrid collaboration.',
-    hint: 'Watch for slow-burn problems — isolation and time-zone drag rarely get raised unprompted.',
-  },
-  {
-    id: 'wrap_up',
-    label: 'Wrap-Up & Action Items',
-    purpose: 'Close with clear commitments on both sides and topics to revisit.',
-    hint: 'Write the commitments down while you are still on the call. Both sides, not just theirs.',
-  },
+  { id: 'icebreaker', label: 'Icebreaker & Rapport' },
+  { id: 'wellbeing', label: 'Check-in & Wellbeing' },
+  { id: 'status', label: 'Current Work & Status' },
+  { id: 'wins_challenges', label: 'Wins & Challenges' },
+  { id: 'goals', label: 'Goals & Career Development' },
+  { id: 'feedback', label: 'Feedback & Performance' },
+  { id: 'team', label: 'Team & Collaboration' },
+  { id: 'manager_company', label: 'Manager & Company Feedback' },
+  { id: 'remote', label: 'Remote & Hybrid Work' },
+  { id: 'wrap_up', label: 'Wrap-Up & Action Items' },
 ];
 
 export const QUESTIONS: Question[] = [
