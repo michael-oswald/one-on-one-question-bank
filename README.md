@@ -14,7 +14,6 @@ into a status update.
 - **73 open-ended questions**, one on screen at a time in large type, sized for screen sharing.
 - **No repeats within a session.** Each deck is drawn down before it reshuffles, and the reshuffle
   never repeats the question still on screen.
-- **A follow-up hint** under each question, so the prompt leads somewhere.
 - **Copy to clipboard** for pasting into meeting notes.
 - **Reset session** to clear the drawn history for every deck.
 - Keyboard shortcuts: <kbd>N</kbd> for the next question, <kbd>C</kbd> to copy.

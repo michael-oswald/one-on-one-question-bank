@@ -98,14 +98,6 @@ export default function App() {
   useEffect(() => () => window.clearTimeout(copyTimer.current), []);
 
   const deckLabel = deck === ALL_DECK ? 'All categories' : CATEGORY_BY_ID[deck].label;
-  const deckPurpose =
-    deck === ALL_DECK
-      ? 'A mix of every theme — good for a conversation that could go anywhere.'
-      : CATEGORY_BY_ID[deck].purpose;
-  const hint =
-    currentQuestion !== undefined
-      ? CATEGORY_BY_ID[currentQuestion.category].hint
-      : undefined;
 
   return (
     <div className="app">
@@ -139,8 +131,6 @@ export default function App() {
       </nav>
 
       <main className="stage">
-        <p className="deck-purpose">{deckPurpose}</p>
-
         <section className="card" aria-labelledby="deck-label">
           <p className="card__category" id="deck-label">
             {currentQuestion && deck === ALL_DECK
@@ -159,8 +149,6 @@ export default function App() {
               </p>
             )}
           </div>
-
-          {hint && <p className="card__hint">{hint}</p>}
         </section>
 
         <div className="actions">
